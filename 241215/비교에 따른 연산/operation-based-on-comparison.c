@@ -6,6 +6,6 @@ int main() {
     if(a>b)
         printf("%d\n",a*b);
     else
-        printf("%d\n",a/b);
+        printf("%d\n",b/a);
     return 0;
 }
