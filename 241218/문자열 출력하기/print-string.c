@@ -5,7 +5,7 @@ int main() {
     scanf("%d",&n);
     for(int i=0;i<n;i++)
     {
-        printf("LeeborsCode\n");
+        printf("LeebrosCode\n");
     }
     return 0;
 }
