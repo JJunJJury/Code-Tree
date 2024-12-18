@@ -1,19 +1,25 @@
 #include <stdio.h>
 
 int main() {
-    int a,b,c,temp;
+    int a,b,c,max,min;
     scanf("%d %d %d",&a,&b,&c);
-    for(int i=0;i<4;i++)
-    {
-        if(a>=b)
-            temp=a;
-            a=b;
-            b=temp;
-        if(b>=c)
-            temp=b;
-            b=c;
-            c=temp;
-    }
-    printf("%d",b);
+    max=a;
+    if(b>max)
+        max=b;
+    if(c>max)
+        max=c;
+
+    min=a;
+    if(b<min)
+        min=b;
+    if(c<min)
+        min=c;
+        
+    if(a!=max&&a!=min)
+        printf("%d",a);
+    else if(b!=max&&b!=min)
+        printf("%d",b);
+    else
+        printf("%d",c);
     return 0;
 }
