@@ -7,7 +7,7 @@ int main() {
     {
         scanf("%d",&num);
         if(num%2==1&&num%3==0)
-            sum+=i;
+            sum+=num;
     }
     printf("%d",sum);
     return 0;
