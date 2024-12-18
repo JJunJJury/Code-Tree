@@ -3,13 +3,13 @@
 int main() {
     int a,b,c,temp;
     scanf("%d %d %d",&a,&b,&c);
-    for(int i=0;i<3;i++)
+    for(int i=0;i<2;i++)
     {
-        if(a>b)
+        if(a>=b)
             temp=a;
             a=b;
             b=temp;
-        if(b>c)
+        if(b>=c)
             temp=b;
             b=c;
             c=temp;
