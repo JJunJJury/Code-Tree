@@ -3,7 +3,7 @@
 int main() {
     int a,b,c,temp;
     scanf("%d %d %d",&a,&b,&c);
-    for(int i=0;i<2;i++)
+    for(int i=0;i<4;i++)
     {
         if(a>=b)
             temp=a;
