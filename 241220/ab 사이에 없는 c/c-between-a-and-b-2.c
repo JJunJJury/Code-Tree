@@ -11,8 +11,8 @@ int main() {
             satis=false;
     }
     if(satis==false)   
-        printf("YES");
-    else
         printf("NO");
+    else
+        printf("YES");
     return 0;
 }
