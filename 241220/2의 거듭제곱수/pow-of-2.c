@@ -10,6 +10,6 @@ int main() {
             break;
         n/=2;
     }
-    printf("%d",n);
+    printf("%d",cnt);
     return 0;
 }
