@@ -7,9 +7,9 @@ int main() {
     scanf("%s %s",a,b);
     lena=strlen(a);
     lenb=strlen(b);
-    if(a>b)
+    if(lena>lenb)
         printf("%s %d",a,lena);
-    else if(b>a)
+    else if(lenb>lena)
         printf("%s %d",b,lenb);
     else
         printf("%s","same");
