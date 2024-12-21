@@ -7,9 +7,11 @@ int main() {
     scanf("%s %s",a,b);
     lena=strlen(a);
     lenb=strlen(b);
-    if(a>=b)
+    if(a>b)
         printf("%s %d",a,lena);
-    else
+    else if(b>a)
         printf("%s %d",b,lenb);
+    else
+        printf("%s","same");
     return 0;
 }
