@@ -3,7 +3,7 @@
 
 int main() {
     char a[10][20],word;
-    int len[10];
+    int len[10],num=0;
     for(int i=0;i<10;i++)
     {
         scanf("%s",a[i]);
@@ -15,8 +15,11 @@ int main() {
     { 
         if(a[i][len[i]-1]==word)
         {
+            num=1;
             printf("%s\n",a[i]);
         }
     }
+    if(num==0)
+        printf("None");
     return 0;
 }
