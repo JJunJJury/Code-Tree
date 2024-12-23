@@ -7,9 +7,20 @@ int main() {
     scanf("%s",a);
     lenth=strlen(a);
     scanf("%d",&num);
-    for(int i=lenth-1;i>=lenth-num;i--)
+    if(num>lenth)
     {
-        printf("%c",a[i]);
+        for(int i=lenth-1;i>=0;i--)
+        {
+            printf("%c",a[i]);
+        }
     }
+    else
+    {
+        for(int i=lenth-1;i>=lenth-num;i--)
+            {
+                printf("%c",a[i]);
+            }
+    }
+    
     return 0;
 }
