@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-    char a[10][20],word;
+    char a[10][200],word;
     int len[10],num=0;
     for(int i=0;i<10;i++)
     {
