@@ -8,22 +8,30 @@ int main() {
     scanf("%s",b);
     lenth=strlen(a);
     checklen=strlen(b);
-    for(int i=0;i<lenth-checklen;i++)
+    if(strcmp(a,b)==0)
     {
-        check=0;
-        for(int j=i;j<i+checklen;j++)
+        printf("0");
+    }
+    else
+    {
+    for(int i=0;i<lenth-checklen;i++)
         {
-            if(check==0&&a[j]!=b[j-i])
+            check=0;
+            for(int j=i;j<i+checklen;j++)
             {
-                check=1;
+                if(check==0&&a[j]!=b[j-i])
+                {
+                    check=1;
+                }
+            }
+            if(check==0&&check2==0)
+            {
+                site=i;
+                check2=1;
             }
         }
-        if(check==0&&check2==0)
-        {
-            site=i;
-            check2=1;
-        }
+        printf("%d",site);
     }
-    printf("%d",site);
+    
     return 0;
 }
