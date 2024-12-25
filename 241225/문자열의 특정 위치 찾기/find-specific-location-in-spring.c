@@ -5,6 +5,7 @@ int main() {
     char a[100],b;
     int check=0,lenth,site;
     scanf("%s",a);
+    getchar();
     scanf("%c",&b);
     lenth=strlen(a);
     for(int i=0;i<lenth;i++)
@@ -19,8 +20,10 @@ int main() {
     {
         printf("%d",site);
     }
-    else
+    else if(check==0)
+    {
         printf("No");
+    }
 
     return 0;
 }
