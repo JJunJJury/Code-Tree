@@ -30,7 +30,12 @@ int main() {
                 check2=1;
             }
         }
-        printf("%d",site);
+        if(check2==1)
+        {
+            printf("%d",site);
+        }
+        else
+            printf("-1");
     }
     
     return 0;
