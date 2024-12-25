@@ -9,11 +9,12 @@ int main() {
     int lenth=strlen(s);
     for(int i=0;i<q;i++)
     {
-        scanf("%d %c %c",&type,&a,&b);
+        scanf("%d",&type);
         if(type==1)
         {
-            a1=a-'1';
-            b1=b-'1';
+            scanf("%d %d",&a1,&b1);
+            a1--;
+            b1--;
             keep=s[a1];
             s[a1]=s[b1];
             s[b1]=keep;
@@ -21,6 +22,7 @@ int main() {
         }
         else if(type==2)
         {
+            scanf("%c %c",&a,&b);
             for(int j=0;j<lenth;j++)
             {
                 if(s[j]==a)
