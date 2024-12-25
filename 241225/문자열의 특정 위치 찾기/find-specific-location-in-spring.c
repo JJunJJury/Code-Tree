@@ -15,7 +15,7 @@ int main() {
             site=i;
         }
     }
-    if(check=1)
+    if(check==1)
     {
         printf("%d",site);
     }
