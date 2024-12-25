@@ -14,7 +14,7 @@ int main() {
     }
     else
     {
-    for(int i=0;i<lenth-checklen;i++)
+    for(int i=0;i<=lenth-checklen;i++)
         {
             check=0;
             for(int j=i;j<i+checklen;j++)
