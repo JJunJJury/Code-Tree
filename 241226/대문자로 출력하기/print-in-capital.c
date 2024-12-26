@@ -11,7 +11,8 @@ int main() {
         {
             if(a[i]>='a'&&a[i]<='z')
                 a[i]-='a'-'A';
-            printf("%c",a[i]);
+            if(a[i]!='[')
+                printf("%c",a[i]);
         }
     }
     return 0;
