@@ -7,12 +7,11 @@ int main() {
     int lenth=strlen(a);
     for(int i=0;i<lenth;i++)
     {
-        if(a[i]>='A'&&a[i]<='z')
+        if((a[i]>='A'&&a[i]<='Z')||(a[i]>='a'&&a[i]<='z'))
         {
             if(a[i]>='a'&&a[i]<='z')
                 a[i]-='a'-'A';
-            if(a[i]!='[')
-                printf("%c",a[i]);
+            printf("%c",a[i]);
         }
     }
     return 0;
