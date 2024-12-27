@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int site=9,a[10],sum=0,cnt=0,check=0;
+    int site=10,a[10],sum=0,cnt=0,check=0;
     for(int i=0;i<10;i++)
     {
         scanf("%d",&a[i]);
