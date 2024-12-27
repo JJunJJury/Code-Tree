@@ -16,7 +16,10 @@ int main() {
     for(int j=0;j<i+1;j++)
     {
         if(j%2==0)
-            printf("%s\n",a[j]);
+        {
+            if(!(strcmp(a[j],"0")==0))
+                printf("%s\n",a[j]);
+        }
     }
     return 0;
 }
