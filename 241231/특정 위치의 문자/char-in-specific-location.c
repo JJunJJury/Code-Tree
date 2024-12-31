@@ -2,7 +2,7 @@
 
 int main() {
     char word,a[6]="LEBROS";
-    int idx;
+    int idx=-1;
     scanf("%c",&word);
     for(int i=0;i<6;i++)
     {
