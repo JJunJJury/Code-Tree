@@ -9,6 +9,8 @@ int main() {
         {
             printf("%c",a);
             a++;
+            if(a=='Z'+1)
+                a='A';
         }
         puts("");
     }
