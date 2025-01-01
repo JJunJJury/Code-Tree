@@ -7,7 +7,7 @@ int main() {
     {
         if(i%2==0)
         {
-            for(int j=(n-(i-1))/2;j>=0;j--)
+            for(int j=n;j>i/2;j--)
             {
                 printf("* ");
             }
