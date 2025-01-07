@@ -7,7 +7,7 @@ int main() {
     {
         for(int j=0;j<3;j++)
         {
-            scanf("%c",&a[i][j]);
+            scanf(" %c",&a[i][j]);
             getchar();
             if(a[i][j]>='a'&&a[i][j]<='z')
                 a[i][j]-='a'-'A';
