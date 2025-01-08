@@ -11,7 +11,7 @@ int main() {
     {
         scanf("%d",&b[i]);
     }
-    for(int i=0;i<num_a-num_b;i++)
+    for(int i=0;i<=num_a-num_b;i++)
     {
         cnt=0;
         if(a[i]==b[0])
