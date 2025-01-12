@@ -24,11 +24,13 @@ int main() {
 bool Check(int a,int b)
 {
     int check=0;
-    if(a==b&&b==1)
+    if(a==b)
     {
-        if(A[0]==B[0])
-            return true;
-        return false;
+        for(int i=0;i<a;i++)
+        {
+            if(A[i]==B[i])
+                check++;
+        }
     }
     else
     {
