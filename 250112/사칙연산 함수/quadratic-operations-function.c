@@ -33,7 +33,7 @@ int sum(int a,int b)
 
 int sub(int a,int b)
 {
-    return a>b?a-b:b-a;
+    return a-b;
 }
 
 int mul(int a,int b)
