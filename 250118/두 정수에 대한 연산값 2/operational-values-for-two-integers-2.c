@@ -11,7 +11,7 @@ int main() {
 
 void Cal(int *a,int *b)
 {
-    if(a>b)
+    if(*a>*b)
     {
         *a*=2;
         *b+=10;
