@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-char a[100000],b[100000];
+char a[10000],b[10000];
 void Sort(char c[]);
 int main() {
     int check=0;
