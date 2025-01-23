@@ -41,6 +41,12 @@ int main() {
         }
     }
     when+=day;
+    while(1)
+    {
+        if(when>0)
+            break;
+        when+=7;
+    }
     when%=7;
     switch(when)
     {
