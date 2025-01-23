@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-    char a[100][100],t[100],array[100][100],temp[100];
+    char a[105][105],t[105],array[105][105],temp[105];
     int n,k,lenth,site=0,check;
     scanf("%d %d %s",&n,&k,t);
     for(int i=0;i<n;i++)
