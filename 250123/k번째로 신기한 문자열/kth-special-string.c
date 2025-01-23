@@ -20,7 +20,7 @@ int main() {
         }
         if(check==lenth)
         {
-            strcpy(array[site],a[site]);
+            strcpy(array[site],a[i]);
             site++;
         }
     }
@@ -28,7 +28,7 @@ int main() {
     {
         for(int j=0;j<site-1;j++)
         {
-            if(strcmp(array[j],array[j+1])<0)
+            if(strcmp(array[j],array[j+1])>0)
             {
                 strcpy(temp,array[j]);
                 strcpy(array[j],array[j+1]);
