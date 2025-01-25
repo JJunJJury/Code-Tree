@@ -9,7 +9,7 @@ int main() {
         scanf("%d %c",&x,&direction);
         if(direction=='L')
         {
-            for(int j=loc;j>loc-x;j--)
+            for(int j=loc-1;j>=loc-x;j--)
             {
                 a[j]++;
             }
