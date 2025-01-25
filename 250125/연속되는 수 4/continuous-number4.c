@@ -7,7 +7,7 @@ int main() {
     {
         scanf("%d",&a[i]);
         cnt++; 
-        if(i==0||a[i]<a[i-1])
+        if(i==0||a[i]<=a[i-1])
         {
             if(cnt>max)
             {
@@ -16,7 +16,8 @@ int main() {
             cnt=0;
         }
     }
-    cnt++;
+    if(a[n-1]>a[n-2])
+        cnt++;
     if(cnt>max)
         max=cnt;
     printf("%d",max);
