@@ -6,43 +6,44 @@ int main() {
     scanf("%d %d",&n,&m);
     for(int i=0;i<n;i++)
     {
+        getchar();
         scanf("%c %d",&direction,&t);
         if(direction=='L')
         {
-            for(int i=loc;i<loc+t;i++)
+            for(int j=loc;j<loc+t;j++)
             {
-                a[i]=a[i-1]-1;
+                a[j]=a[j-1]-1;
             }
-            loc+=t-1;
         }
         else if(direction=='R')
         {
-            for(int i=loc;i<loc+t;i++)
+            for(int j=loc;j<loc+t;j++)
             {
-                a[i]=a[i-1]+1;
+                a[j]=a[j-1]+1;
             }
-            loc+=t-1;
         }
+        loc+=t;
     }
+    loc=1;
     for(int i=0;i<m;i++)
     {
+        getchar();
         scanf("%c %d",&direction,&t);
         if(direction=='L')
         {
-            for(int i=loc;i<loc+t;i++)
+            for(int j=loc;j<loc+t;j++)
             {
-                b[i]=b[i-1]-1;
+                b[j]=b[j-1]-1;
             }
-            loc+=t-1;
         }
         else if(direction=='R')
         {
-            for(int i=loc;i<loc+t;i++)
+            for(int j=loc;j<loc+t;j++)
             {
-                b[i]=b[i-1]+1;
+                b[j]=b[j-1]+1;
             }
-            loc+=t-1;
         }
+        loc+=t;
     }
     for(int i=1;i<1000;i++)
     {
@@ -50,6 +51,8 @@ int main() {
             check=1;
             meet=i;
         }
+        if(check==1)
+            break;
     }
     printf("%d",meet);
     return 0;
