@@ -16,8 +16,7 @@ int main() {
             }
         }
     }
-    if(a[n-1]>a[n-2])
-        cnt++;
+    cnt++;
     if(cnt>max)
         max=cnt;
     printf("%d",max);
