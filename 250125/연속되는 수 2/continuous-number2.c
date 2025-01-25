@@ -14,6 +14,9 @@ int main() {
             cnt=0;
         }
     }
+    cnt++;
+    if(cnt>max)
+        max=cnt;
     printf("%d",max);
     return 0;
 }
