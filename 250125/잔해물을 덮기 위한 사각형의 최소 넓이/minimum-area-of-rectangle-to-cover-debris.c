@@ -28,14 +28,14 @@ int main() {
                 if(i<x_min)
                     x_min=i;
                 if(i>x_max)
-                    x_max=i+1;
+                    x_max=i;
                 if(j<y_min)
                     y_min=j;
                 if(j>y_max)
-                    y_max=j+1;
+                    y_max=j;
             }
         }
     }
-    printf("%d",(x_max-x_min)*(y_max-y_min));
+    printf("%d",(x_max+1-x_min)*(y_max+1-y_min));
     return 0;
 }
