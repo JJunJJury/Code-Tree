@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int a[200000]={0,},check[200000]={0,},loc=100000,x,n,cnt1=0,cnt2=0,cnt3=0;
+    int a[200000]={0,},checkb[200000]={0,},checkw[200000]={0,},loc=100000,x,n,cnt1=0,cnt2=0,cnt3=0;
     char direction;
     scanf("%d",&n);
     for(int i=0;i<n;i++)
@@ -11,7 +11,7 @@ int main() {
         {
             for(int j=loc;j>loc-x;j--)
             {
-                check[j]++;
+                checkw[j]++;
                 a[j]=1;
             }
             loc=loc-x+1;
@@ -20,7 +20,7 @@ int main() {
         {
             for(int j=loc;j<loc+x;j++)
             {
-                check[j]++;
+                checkb[j]++;
                 a[j]=2;
             }
             loc=loc+x-1;
@@ -28,7 +28,7 @@ int main() {
     }
     for(int i=0;i<200000;i++)
     {
-        if(check[i]<4)
+        if((checkb[i]<2||checkw[i]<2))
         {
             if(a[i]==1)
             {
@@ -39,7 +39,7 @@ int main() {
                 cnt2++;
             }
         }
-        else if(check[i]>=4)
+        else if(!(checkb[i]<2||checkw[i]<2))
         {
             cnt3++;
         }
