@@ -6,14 +6,14 @@ int main() {
     for(int i=0;i<n;i++)
     {
         scanf("%d %d",&x1,&x2);
-        for(int i=x1;i<x2;i++)
+        for(int i=x1;i<=x2;i++)
         {
             a[i]++;
         }
     }
     for(int i=0;i<100;i++)
     {
-        if(a[i]>1)
+        if(a[i]==n)
             check++;
     }
     if(check==0)
