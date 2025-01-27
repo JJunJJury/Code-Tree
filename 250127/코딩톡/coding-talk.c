@@ -15,13 +15,19 @@ int main() {
         if(i>=p-1)
         {
             a[character-'A']=1;
+            if(check==0)
+            {
+                for(int i=0;i<n;i++)
+                {
+                    a[i]=1;
+                }
+            }
         }
     }
     for(int i=0;i<n;i++)
     {
         if(a[i]==0)
-            cnt++;
+            printf("%c ",i+'A');
     }
-    printf("%d",cnt);
     return 0;
 }
