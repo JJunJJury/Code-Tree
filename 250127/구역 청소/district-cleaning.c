@@ -29,6 +29,20 @@ int main() {
             cnt++;
         }
     }
+    if(c>=a&&d<=b)
+    {
+        for(int i=a;i<b;i++)
+        {
+            cnt++;
+        }
+    }
+    if(a>=c&&b<=d)
+    {
+        for(int i=a;i<b;i++)
+        {
+            cnt++;
+        }
+    }
     printf("%d",cnt);
     return 0;
 }
