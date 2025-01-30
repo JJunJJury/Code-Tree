@@ -13,12 +13,7 @@ int main() {
         check=1;
     while(!(b-a==1&&c-b==1))
     {
-        if(b-a==2||c-b==2)
-        {
-            cnt+=1;
-            break;
-        }
-        else if(c-b<b-a)
+        if(c-b<b-a)
         {
             c=b-1;
             cnt++;
