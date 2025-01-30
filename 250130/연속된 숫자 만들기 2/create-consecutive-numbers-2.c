@@ -2,8 +2,10 @@
 
 void Sort(int *a,int *b,int *c);
 int main() {
-    int a,b,c,cnt=0;
+    int a,b,c,cnt=0,check=0;
     scanf("%d %d %d",&a,&b,&c);
+    if(a-b==1&&b-c==1)
+        check=1;
     Sort(&a,&b,&c);
     while(!(b-a==1&&c-b==1))
     {
@@ -24,7 +26,10 @@ int main() {
         }
         Sort(&a,&b,&c);
     }
-    printf("%d",cnt);
+    if(check==1)
+        printf("0");
+    else
+        printf("%d",cnt);
     return 0;
 }
 
