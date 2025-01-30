@@ -1,12 +1,16 @@
 #include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
 
 void Sort(int *a,int *b,int *c);
 int main() {
-    int a,b,c,cnt=0,check=0;
+    int a,b,c,cnt=0,check=0,sum;
     scanf("%d %d %d",&a,&b,&c);
-    if(a-b==1&&b-c==1)
+    if(b-a==1&&c-b==1)
         check=1;
     Sort(&a,&b,&c);
+    if(b-a==1&&c-b==1)
+        check=1;
     while(!(b-a==1&&c-b==1))
     {
         if(b-a==2||c-b==2)
@@ -26,7 +30,7 @@ int main() {
         }
         Sort(&a,&b,&c);
     }
-    if(check==1)
+    if(check!=0)
         printf("0");
     else
         printf("%d",cnt);
@@ -47,5 +51,11 @@ void Sort(int *a,int *b,int *c)
         temp=*b;
         *b=*c;
         *c=temp;
+    }
+    if(*a>*b)
+    {
+        temp=*a;
+        *a=*b;
+        *b=temp;
     }
 }
