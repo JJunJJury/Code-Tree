@@ -7,15 +7,9 @@ int main() {
     Sort(&a,&b,&c);
     while(!(b-a==1&&c-b==1))
     {
-        Sort(&a,&b,&c);
         if(b-a<=2&&c-b<=2)
         {
             cnt+=1;
-            break;
-        }
-        else if(b-a<=3&&c-b<=3)
-        {
-            cnt+=2;
             break;
         }
         else if(c-b<b-a)
@@ -28,6 +22,7 @@ int main() {
             c=(a+b)/2;
             cnt++;
         }
+        Sort(&a,&b,&c);
     }
     printf("%d",cnt);
     return 0;
