@@ -8,12 +8,12 @@ int main() {
     while(!(b-a==1&&c-b==1))
     {
         Sort(&a,&b,&c);
-        if(b-a<=2||c-b<=2)
+        if(b-a<=2&&c-b<=2)
         {
             cnt+=1;
             break;
         }
-        else if(b-a<=3||c-b<=3)
+        else if(b-a<=3&&c-b<=3)
         {
             cnt+=2;
             break;
