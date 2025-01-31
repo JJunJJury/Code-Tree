@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int n,m,v,t,site=1,time=0,front,cnt=0,a[1005]={0,},b[1005]={0,};
+    int n,m,v,t,site=1,time=0,front,cnt=0,a[1000005]={0,},b[1000005]={0,};
     scanf("%d %d",&n,&m);
     for(int i=0;i<n;i++)
     {
