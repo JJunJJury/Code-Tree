@@ -2,7 +2,7 @@
 #include <limits.h>
 
 int main() {
-    int a[15]={0,},A,B,C,D,min=INT_MAX,max,site;
+    int a[15]={0,},A,B,C,D,min=INT_MAX,max=0,site;
     for(int i=0;i<15;i++)
     {
         scanf("%d",&a[i]);
