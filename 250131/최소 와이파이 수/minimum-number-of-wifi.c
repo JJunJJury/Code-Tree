@@ -7,12 +7,16 @@ int main() {
     {
         scanf("%d",&a[i]);
     }
-    for(int i=0;i<n;i++)
+    for(int i=0;i<n;)
     {
         if(a[i]==1)
         {
             cnt++;
             i+=m*2+1;
+        }
+        else
+        {
+            i++;
         }
     }
     printf("%d",cnt);
