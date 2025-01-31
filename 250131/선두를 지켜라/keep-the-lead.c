@@ -14,7 +14,7 @@ int main() {
         }
     }
     site=1;
-    for(int i=0;i<n;i++)
+    for(int i=0;i<m;i++)
     {
         scanf("%d %d",&v,&t);
         for(int j=0;j<t;j++)
@@ -23,7 +23,7 @@ int main() {
             site++;
         }
     }
-    for(int i=1;i<t;i++)
+    for(int i=1;i<=time;i++)
     {
         if(a[i]>b[i])
         {
@@ -38,7 +38,7 @@ int main() {
             break;
         }
     }
-    for(int i=site;i<t;i++)
+    for(int i=site;i<=time;i++)
     {
         if(front==1)
         {
