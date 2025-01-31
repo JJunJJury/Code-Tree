@@ -22,7 +22,6 @@ int main() {
         }
         for(int j=1;j<=100;j++)
         {
-            printf("%d ",line[j]);
             if(line[j]!=0)
             {
                 cnt++;
@@ -31,7 +30,6 @@ int main() {
         }
         if(cnt<min)
             min=cnt;
-        puts("");
     }
     printf("%d",min-1);
     return 0;
