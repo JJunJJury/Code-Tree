@@ -13,6 +13,9 @@ int main() {
             break;
         }
     }
-    printf("%d",target);
+    if(target==0)
+        printf("-1");
+    else
+        printf("%d",target);
     return 0;
 }
