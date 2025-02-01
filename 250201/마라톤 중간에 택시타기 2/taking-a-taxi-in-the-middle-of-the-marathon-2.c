@@ -9,7 +9,7 @@ int main() {
     {
         scanf("%d %d",&x[i],&y[i]);
     }
-    for(int i=0;i<n;i++)
+    for(int i=1;i<n-1;i++)
     {
         cnt=0;
         site=1;
@@ -17,7 +17,8 @@ int main() {
         {
             if(i==j)
             {
-                site++;
+                cnt+=abs(x[site+1]-x[site-1])+abs(y[site+1]-y[site-1]);
+                site+=2;
                 continue;
             }
             cnt+=abs(x[site]-x[site-1])+abs(y[site]-y[site-1]);
@@ -26,6 +27,6 @@ int main() {
         if(cnt<min)
             min=cnt;
     }
-    printf("%d",min*2);
+    printf("%d",min);
     return 0;
 }
