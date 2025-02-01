@@ -15,7 +15,7 @@ int main() {
         {
             if(i==j)
                 continue;
-            cnt+=((j-i+n)%5)*a[j];
+            cnt+=((j-i+n)%n)*a[j];
         }
         if(cnt<min)
             min=cnt;
