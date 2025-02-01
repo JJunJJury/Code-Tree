@@ -83,6 +83,7 @@ int main() {
     }
     savex++,savey++;
     printf("%d\n",win);
-    printf("%d %d\n",savex,savey);
+    if(win!=0)
+        printf("%d %d\n",savex,savey);
     return 0;
 }
