@@ -67,7 +67,7 @@ int main() {
                 {
                     win=1;
                     savex=i+2;
-                    savey=j-1;
+                    savey=j-2;
                 }
             }
             if(a[i][j]==2)
@@ -75,8 +75,8 @@ int main() {
                 if(a[i+1][j-1]==2&&a[i+2][j-2]==2&&a[i+3][j-3]==2&&a[i+4][j-4]==2)
                 {
                     win=2;
-                    savex=i-2;
-                    savey=j+2;
+                    savex=i+2;
+                    savey=j-2;
                 }
             }
         }
