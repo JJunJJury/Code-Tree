@@ -428,17 +428,22 @@ int main() {
                 c[i]=3;
         }
     }
-    cnt=2*5*5*5;
-    for(int i=1;i<=n;i++)
+    if(n<5)
+        cnt=1;
+    else
     {
-        if(a[i]==2)
-            cnta++;
-        if(b[i]==2)
-            cntb++;
-        if(c[i]==2)
-            cntc++; 
+        cnt=2*5*5*5;
+        for(int i=1;i<=n;i++)
+        {
+            if(a[i]==2)
+                cnta++;
+            if(b[i]==2)
+                cntb++;
+            if(c[i]==2)
+                cntc++; 
+        }
+        cnt-=cnta*cntb*cntc;
     }
-    cnt-=cnta*cntb*cntc;
     printf("%d",cnt);
     return 0;
 }
