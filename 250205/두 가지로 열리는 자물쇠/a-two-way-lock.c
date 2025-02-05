@@ -422,7 +422,7 @@ int main() {
     {
         for(int i=c2-2;i<=c2+2;i++)
         {
-            if(a[i]==1)
+            if(c[i]==1)
                 c[i]=2;
             else
                 c[i]=3;
