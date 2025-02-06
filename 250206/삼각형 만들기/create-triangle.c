@@ -24,17 +24,18 @@ int main() {
                             {
                                 X=abs(x[k]-x[j]);
                             }
-                            else
+                            else if(x[k]==x[j])
                             {
                                 X=abs(x[k]-x[i]);
                             }
+                            Y=abs(y[k]-y[i]);
+                            save=X*Y;
+                            if(save>max)
+                                max=save;
                         }
-                        Y=abs(y[k]-y[i]);
                     }
                 }
-                save=X*Y;
-                if(save>max)
-                    max=save;
+                
             }
         }
     }
